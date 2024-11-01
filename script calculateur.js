@@ -1,25 +1,22 @@
 //scrpit calculateur de tournées
 
 function calculer() {
-    // Récupérer la valeur de A
-    const A77 = parseFloat(document.getElementById('A77').value);
-
-    // Récupérer la valeur de B1 (sans le %)
+    const A77 = parseFloat(document.getElementById('A77').value);  
     const textB177 = document.getElementById('B177').innerText;
     const B177 = parseFloat(textB177.replace('%', '')) / 100; // Convertir en nombre décimal
 
-    // Si A est bien un nombre, effectuer le calcul
+   
     if (!isNaN(A77) && !isNaN(B177)) {
         const resultat = A77 * B177;
 
-        // Afficher le résultat dans D1
-        document.getElementById('D177').innerText = resultat.toFixed(2); // Limité à 2 décimales
+        
+        document.getElementById('D177').innerText = resultat.toFixed(2); 
     } else {
-        // Si A n'est pas défini, on garde D1 vide
+        
         document.getElementById('D177').innerText = ",,";
     }
 }
-let nombreBoucles = 5; // Default number of cycles
+let nombreBoucles = 5; 
 let tempsCycle = 0;
 
 function decrementer() {
