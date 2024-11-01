@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de cycle</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <img src="images\logo.png" alt="Logo" class="logo" onclick="location.href='index.html'">
+  <h1>Calculateur de tournées</h1>
+ 
+  <form>
+    <label for="vitesse"class="center-label">Vitesse enrouleuse:</label>
+    <input type="number" id="vitesse" name="vitesse"><br>
+    <label for="distance"class="center-label">Longueur bobine:</label>
+    <input type="number" id="distance" name="distance"><br>
+    <label for="prochaineTounee"class="center-label">Prochaine tournée (en minutes):</label>
+    <input type="number" id="prochaineTounee" name="prochaineTounee"><br>
+    <input type="submit" value="Calculer">
+  </form>
+  
+  <table class="tableauresultat">
+    <tr>
+      <th>Prochaine tournée</th>
+    </tr>
+    <tbody id="resultat"></tbody>
+  
+    <tr>
+      <th>Tournées suivantes</th>
+    </tr>
+    <tbody id="resultat1"></tbody>
+  </table>
+  <p id="tempsEntreDeuxCycles"></p>
+  <button onclick="decrementer()">-</button>
+  <span id="nombreBoucles">5</span>
+  <button onclick="incrementer()">+</button>
+
+  <table id="resultat1"></table>
+  <script src="script calculateur.js"></script>
+  
+</body>
+
+</html>
