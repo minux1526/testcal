@@ -61,10 +61,9 @@ table {
     border: 1px solid #ddd;
 }
 
-form {
-    max-width: 300;
+form {    
     margin:  auto;
-    padding: 20px;
+    padding: 25px 30px 10px 30px;
     background: #e5e5e5 ;
     border-radius: 15px;
 }
