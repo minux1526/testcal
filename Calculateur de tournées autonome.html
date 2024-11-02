@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur de cycle</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <img src="images\Kp-logo.svg" alt="Logo" class="logo" onclick="location.href='index.html'">
+  <h1>Calculateur de tournées</h1>
+ 
+  <form>
+    <label for="vitesse">Vitesse enrouleuse:</label>
+    <input type="number" id="vitesse" name="vitesse"><br>
+    <label for="distance">Longueur bobine:</label>
+    <input type="number" id="distance" name="distance"><br>
+    <label for="prochaineTounee">Prochaine tournée (en minutes):</label>
+    <input type="number" id="prochaineTounee" name="prochaineTounee"><br>
+    <input type="submit" value="Calculer">
+  </form>
+  
+  <table class="tableauresultat">
+    <tr>
+      <th>Prochaine tournée</th>
+    </tr>
+    <tbody id="resultat"></tbody>
+  
+    <tr>
+      <th>Tournées suivantes</th>
+    </tr>
+    <tbody id="resultat1"></tbody>
+  </table>
+  <p id="tempsEntreDeuxCycles"></p>
+  <button onclick="decrementer()">-</button>
+  <span id="nombreBoucles">5</span>
+  <button onclick="incrementer()">+</button>
+
+  <table id="resultat1"></table>
+  
+  <script>
+    let nombreBoucles = 5; // Default number of cycles
+    let tempsCycle = 0; 
+
+    function decrementer() {
+      if (nombreBoucles > 1) {
+        nombreBoucles--;
+        document.getElementById('nombreBoucles').textContent = nombreBoucles;
+      }
+    }
+
+    function incrementer() {
+      nombreBoucles++;
+      document.getElementById('nombreBoucles').textContent = nombreBoucles;
+    }
+    const form = document.querySelector('form');
+    const resultat = document.getElementById('resultat');
+    const resultat1 = document.getElementById('resultat1');
+    const tempsEntreDeuxCycles = document.getElementById('tempsEntreDeuxCycles');
+   
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const vitesse = parseFloat(form.elements.vitesse.value);
+      const distance = parseFloat(form.elements.distance.value);
+      const prochaineTounee = parseFloat(form.elements.prochaineTounee.value);
+      resultat.innerHTML = '';
+      resultat1.innerHTML = '';
+      let tempsProchaineTouneeTotal = 0;
+      
+      for (let i = 1; i <= 1; i++) {
+        const tempsCycle = distance / vitesse;
+        tempsProchaineTouneeTotal += prochaineTounee;
+
+        const tempsProchaineTounee = new Date(Date.now() + tempsProchaineTouneeTotal * 60000);
+        const formattedTime = `${tempsProchaineTounee.getHours()}:${String(tempsProchaineTounee.getMinutes()).padStart(2, '0')}`;
+        const row = `<tr><td>${formattedTime}</td></tr>`;
+        resultat.insertAdjacentHTML('beforeend', row);
+      }
+
+      let nombreBouclesElement = document.getElementById("nombreBoucles");
+      let nombreBoucles = parseInt(nombreBouclesElement.textContent);
+
+      for (let i = 1; i <= nombreBoucles; i++) {
+        const tempsCycle = distance / vitesse;
+        tempsProchaineTouneeTotal += tempsCycle;
+
+        const tempsProchaineTounee = new Date(Date.now() + tempsProchaineTouneeTotal * 60000);
+        const formattedTime = `${tempsProchaineTounee.getHours()}:${String(tempsProchaineTounee.getMinutes()).padStart(2, '0')}`;
+        const row = `<tr><td>${formattedTime}</td></tr>`;
+        resultat1.insertAdjacentHTML('beforeend', row);
+      }
+ 
+      const tempsEntreDeuxCyclesMinutes = (distance / vitesse).toFixed(2);
+      tempsEntreDeuxCycles.textContent = `Temps tournée : ${tempsEntreDeuxCyclesMinutes} min`;
+    });
+  </script>
+</body>
+
+</html>
