@@ -68,7 +68,7 @@ form {
     border-radius: 15px;
 }
 
-.center-label {
+label {
     display: block;
     margin: 5px;
     font-weight:bold;
