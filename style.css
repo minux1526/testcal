@@ -67,7 +67,7 @@ form {
     max-width: 250px;
     margin: 0 auto;
     padding: 20px;
-    background: #f5f5f5;
+    background: #c8c6c6 ;
     border-radius: 15px;
 }
 
@@ -103,13 +103,14 @@ input[type="number"] {
 /* Style pour le bouton de soumission du formulaire */
 input[type="submit"] {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     background: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 17px;
+    margin: 15px auto ;
 }
 
 /* Style au survol du bouton de soumission */
