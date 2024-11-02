@@ -47,8 +47,6 @@ body {
     margin: 0;
     overflow-y: auto;
 }
-
-/* Style pour le titre de la page */
 h1 {
     font-size: 50px;
     text-align: center;
@@ -61,8 +59,6 @@ table {
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
-
-/* Style pour le formulaire de saisie des données */
 form {
     max-width: 250px;
     margin: 0 auto;
@@ -82,16 +78,11 @@ form {
 
 input[type="text"] {
     border: none;
-    /* Supprime les bordures par défaut */
     padding: 5px;
-    /* Ajustez la valeur selon vos besoins */
     width: 80%;
-    /* Ajustez la largeur selon vos besoins */
     box-sizing: border-box;
     text-align: center;
 }
-
-/* Style pour les champs numériques du formulaire */
 input[type="number"] {
     border: none;
     width: 100%;
@@ -99,8 +90,6 @@ input[type="number"] {
     text-align: center;
     box-sizing: border-box;
 }
-
-/* Style pour le bouton de soumission du formulaire */
 input[type="submit"] {
     width: 100%;
     padding: 5px;
@@ -112,13 +101,9 @@ input[type="submit"] {
     font-size: 17px;
     margin: 15px auto ;
 }
-
-/* Style au survol du bouton de soumission */
 input[type="submit"]:hover {
     background: radial-gradient(circle, rgb(255, 0, 21), rgb(4, 0, 255));
 }
-
-/* Style pour le tableau d'affichage des résultats */
 .tableauresultat {
     max-width: 300px;
     margin: 20px auto;
@@ -127,15 +112,11 @@ input[type="submit"]:hover {
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
-
-/* Style pour les cellules d'en-tête et de données du tableau */
 .tableauresultat th,
 .tableauresultat td {
     padding: 10px;
     border: 1px solid #ddd;
 }
-
-/* Style pour le paragraphe affichant le temps entre deux cycles */
 p {
     text-align: center;
     font-weight: bold;
@@ -157,22 +138,18 @@ th,
 td {
     border: 1px solid #252525;
     padding: 3px;
-    /* Ajuste l'espacement interne */
     text-align: center;
     width: 30px;
-    /* S'assure que les cellules s'adaptent au contenu */
+
 }
 
-/* Ajout pour le titre et le logo */
+
 .header-container {
     display: flex;
     align-items: center;
-    /* Aligne verticalement le titre et le logo */
     margin-bottom: 20px;
-    /* Espacement en dessous du titre */
+    
 }
-
-
 
 .styled-input {
     width: 50px;
@@ -180,9 +157,6 @@ td {
     font-size: 20px;
 }
 
-
-/* Style pour l'élément qui affiche le débit total */
-.debit-total {
     font-size: 15px;
     font-weight: bold;
     color: #0a0a0a;
@@ -190,12 +164,9 @@ td {
     margin-top: 1px;
 }
 
-
-/* Style pour le résultat */
 .resultat {
     font-size: 30px;
     color: #0072ce;
-    /* Couleur bleue pour le résultat */
     padding-left: 10px;
     font-weight: bold;
     background-color: #f1f1f1;
@@ -204,7 +175,6 @@ td {
     display: inline-block;
 }
 
-/* Ajouter une transition si le résultat change */
 .resultat {
     transition: color 0.3s, background-color 0.3s;
 }
