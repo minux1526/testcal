@@ -47,6 +47,7 @@ body {
     margin: 0;
     overflow-y: auto;
 }
+
 h1 {
     font-size: 50px;
     text-align: center;
@@ -59,19 +60,20 @@ table {
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
+
 form {
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 300;
+    margin:  auto;
     padding: 20px;
-    background: #c8c6c6 ;
+    background: #d3d3d3 ;
     border-radius: 15px;
 }
 
 .center-label {
     display: block;
     margin: 5px;
-    font-weight: bold;
-    font-size: 17px;
+    font-weight:bold;
+    font-size: 15px;
     display: block;
     text-align: center;
 }
@@ -83,6 +85,7 @@ input[type="text"] {
     box-sizing: border-box;
     text-align: center;
 }
+
 input[type="number"] {
     border: none;
     width: 100%;
@@ -90,6 +93,7 @@ input[type="number"] {
     text-align: center;
     box-sizing: border-box;
 }
+
 input[type="submit"] {
     width: 100%;
     padding: 5px;
@@ -101,9 +105,11 @@ input[type="submit"] {
     font-size: 17px;
     margin: 15px auto ;
 }
+
 input[type="submit"]:hover {
     background: radial-gradient(circle, rgb(255, 0, 21), rgb(4, 0, 255));
 }
+
 .tableauresultat {
     max-width: 300px;
     margin: 20px auto;
@@ -112,11 +118,13 @@ input[type="submit"]:hover {
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
+
 .tableauresultat th,
 .tableauresultat td {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
 p {
     text-align: center;
     font-weight: bold;
@@ -140,15 +148,15 @@ td {
     padding: 3px;
     text-align: center;
     width: 30px;
-
+    
 }
-
 
 .header-container {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
     
+    margin-bottom: 20px;
+   
 }
 
 .styled-input {
@@ -157,6 +165,7 @@ td {
     font-size: 20px;
 }
 
+.debit-total {
     font-size: 15px;
     font-weight: bold;
     color: #0a0a0a;
@@ -164,9 +173,11 @@ td {
     margin-top: 1px;
 }
 
+
+
 .resultat {
     font-size: 30px;
-    color: #0072ce;
+    color: #0072ce; 
     padding-left: 10px;
     font-weight: bold;
     background-color: #f1f1f1;
