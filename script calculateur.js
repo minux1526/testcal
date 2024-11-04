@@ -68,5 +68,7 @@ form.addEventListener('submit', (event) => {
     }
 
     const tempsEntreDeuxCyclesMinutes = (distance / vitesse).toFixed(2);
-    tempsEntreDeuxCycles.textContent = `Temps tournée : ${tempsEntreDeuxCyclesMinutes} min`;
+    const heures = Math.floor(tempsEntreDeuxCyclesMinutes / 60);
+    const minutes = tempsEntreDeuxCyclesMinutes % 60;
+    tempsEntreDeuxCycles.textContent = `Temps tournée : ${heures}h ${minutes}min`;
 });
