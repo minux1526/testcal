@@ -1,3 +1,14 @@
+/* general  */
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-y: auto;    
+}
+
 .logo {
     position: absolute;
     height: auto;
@@ -12,10 +23,9 @@
     align-items: center;
     max-width: 65%;
     height: auto;
-    opacity: 0.7
+    opacity: 0.5
 
 }
-
 .button-container {
     display: flex;
     position: absolute;
@@ -23,10 +33,13 @@
     flex-direction: column;
     align-items: center;
     opacity: 80%;
-
-
 }
-
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .button-container button {
     border-radius: 25px;
     margin: 10px;
@@ -34,163 +47,189 @@
     padding: 30px;
     font-size: 25px;
     transition: background 5s ease;
+    background: #b0a9b1 ;
 }
-
 .button-container button:hover {
-    background: radial-gradient(circle, rgb(255, 0, 21), rgb(4, 0, 255));
+    background: radial-gradient(circle, rgb(253, 1, 35), rgb(4, 0, 255));
 }
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    overflow-y: auto;
-}
-
-h1 {
-    font-size: 50px;
+/* feuille de changemet  */
+.inputtextlignea{
+    background:#9c9b9b;
+    font-size: 15PX;
+    border: none;
+    padding: 0px;
+    width: 80%;
+    box-sizing: border-box;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
+.inputnumberlignea{
+    background-color: #9c9b9b;
+    font-size: 15PX;
+    border: none;
+    padding: 0px;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.inputtextligneb{
+    background: #686767;
+    font-size: 15PX;
+    border: none;
+    padding: 0px;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.inputnumberligneb{
+    background-color:#686767;
+    font-size: 15PX;
+    border: none;
+    padding: 0px;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.thlignea{
+    background-color: #9c9b9b;
+    font-size: 50px;
+}
+.tdlignea{
+    background-color:#9c9b9b;
+    
+    
+}
+.thligneb{
+    background-color: #686767;
+    font-size: 50px;
+}
+.tdligneb{
+    background-color:#686767;
+    
+}
+th{
+    border: 1px solid #252525;
+    padding: 3px;
+    text-align: center;
+    width: 7%;
+    background: #ffffff;    
+}
+td {
+    border: 1px solid #252525;
+    padding: 3px;
+    text-align: center;
+    width: 7%;
+    background: #007BFF;       
+}
+.styled-inputa {
+    width:90%;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+    font: bold;
+    background: #9c9b9b;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.styled-inputb {
+    width:90%;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+    background: #686767;
+    font-family: 'Quicksand', sans-serif;
+}
+.debit-total span {
+    font-size: 30px;
+    color: #000000;
+    font: bold; 
+    width:90%;
+    border: none;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    
+  }
+  .different {
+    color: red; /* Vous pouvez remplacer 'red' par la couleur de votre choix */
+  }
 
+
+/* calculateur */
 table {
     width: 90%;
     border-collapse: collapse;
     border: 1px solid #ddd;
 }
-
-form {    
-    margin:  auto;
+form {      
     padding: 25px 30px 10px 30px;
     background: #e5e5e5 ;
     border-radius: 15px;
 }
-
 label {
     display: block;
     margin: 5px;
     font-weight:bold;
     font-size: 15px;
     display: block;
-    text-align: center;
+    text-align: center;      
 }
-
-input[type="text"] {
+.inputnumbercalc {
     border: none;
-    padding: 5px;
-    width: 80%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-input[type="number"] {
-    border: none;
+    font-weight:bold;
+    font-size: 15px;
     width: 100%;
     padding: 5px;
     text-align: center;
     box-sizing: border-box;
+    background: #fdfdfd ; 
+    font-family: 'Quicksand', sans-serif;   
 }
-
 input[type="submit"] {
     width: 100%;
     padding: 5px;
     background: #007BFF;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 15px;
     margin: 15px auto ;
 }
-
 input[type="submit"]:hover {
     background: radial-gradient(circle, rgb(255, 0, 21), rgb(4, 0, 255));
 }
-
+.tableauresultat th,
+.tableauresultat td,
 .tableauresultat {
+    padding: 10px;
+    background: #ffffff;
     max-width: 300px;
     margin: 20px auto;
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-    border: 1px solid #ddd;
-}
-
-.tableauresultat th,
-.tableauresultat td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-p {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-
-.tableauStylise {
-    display: table;
-    border-collapse: collapse;
-    box-sizing: border-box;
-    text-indent: initial;
-    unicode-bidi: isolate;
-    border-spacing: 2px;
-    border-color: rgb(82, 81, 81);
-}
-
-th,
-td {
-    border: 1px solid #252525;
-    padding: 3px;
-    text-align: center;
-    width: 30px;
-    
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    
-    margin-bottom: 20px;
-   
-}
-
-.styled-input {
-    width: 50px;
-    padding: 25px;
-    font-size: 20px;
-}
-
-.debit-total {
-    font-size: 15px;
-    font-weight: bold;
-    color: #0a0a0a;
-    text-align: center;
-    margin-top: 1px;
+    border: 1px solid #110e0e;
 }
 
 
 
-.resultat {
-    font-size: 30px;
-    color: #0072ce; 
-    padding-left: 10px;
-    font-weight: bold;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 5px 10px;
-    display: inline-block;
-}
 
-.resultat {
-    transition: color 0.3s, background-color 0.3s;
-}
 
-.resultat:empty {
-    color: #d50032;
-}
+
+
+
+
+
+
+
+
+
+
+
+
