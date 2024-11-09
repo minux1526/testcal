@@ -75,7 +75,7 @@ h1 {
     font-family: 'Quicksand', sans-serif;
 }
 .inputtextligneb{
-    background: #686767;
+    background: #ffffff;
     font-size: 15PX;
     border: none;
     padding: 0px;
@@ -85,7 +85,7 @@ h1 {
     font-family: 'Quicksand', sans-serif;
 }
 .inputnumberligneb{
-    background-color:#686767;
+    background-color:#ffffff;
     font-size: 15PX;
     border: none;
     padding: 0px;
@@ -104,11 +104,12 @@ h1 {
     
 }
 .thligneb{
-    background-color: #686767;
+    background-color: #ffffff;
     font-size: 50px;
 }
 .tdligneb{
-    background-color:#686767;
+    background-color:#ffffff;
+    border: 1px solid #252525;
     
 }
 th{
@@ -142,7 +143,7 @@ td {
     text-align: center;
     padding: 5px;
     font-size: 50px;
-    background: #686767;
+    background: #ffffff;
     font-family: 'Quicksand', sans-serif;
 }
 .debit-total span {
@@ -156,7 +157,29 @@ td {
     
   }
   .different {
-    color: red; /* Vous pouvez remplacer 'red' par la couleur de votre choix */
+    background-color: #ffcccc !important; /* Rouge clair */
+  }
+
+  td.different {
+    background-color: #ffcccc !important;
+  }
+
+  td.different input {
+    background-color: #ffcccc !important;
+  }
+
+  /* Pour conserver la distinction entre les lignes a et b même en état "different" */
+  .tdlignea.different {
+    background-color: #ffb3b3 !important; /* Rouge plus clair pour ligne a */
+  }
+
+  .tdligneb.different {
+    background-color: #ff9999 !important; /* Rouge plus foncé pour ligne b */
+  }
+
+  .tdlignea.different input,
+  .tdligneb.different input {
+    background-color: inherit !important;
   }
 
 
@@ -218,11 +241,31 @@ input[type="submit"]:hover {
 }
 
 
+.tr-group-start td,
+.tr-group-start th {
+    border-top: 3px solid #252525;
+    
+}
 
 
-
-
-
+td, th {
+    border: 1px solid #252525;
+}
+tbody tr:last-child td,
+tbody tr:last-child th,
+tbody tr:last-child td[rowspan],
+tbody tr:last-child th[rowspan],
+tbody tr:nth-last-child(1) td[rowspan],
+tbody tr:nth-last-child(2) td[rowspan],
+tbody tr:nth-last-child(3) td[rowspan] {
+    border-bottom: 3px solid #252525;
+}
+th[rowspan] {
+    border: 3px solid #252525 !important;
+}
+td[id^="K"] {
+    border-right: 3px solid #252525 !important;
+}
 
 
 
