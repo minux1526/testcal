@@ -23,11 +23,9 @@
                 <th></th>
                 <th></th>
                 <th></th>
-                <th><p class="debit-total"> <span id="resultat"></span></p></th>
-                    
-
-
-                
+                <th>
+                    <p class="debit-total"> <span id="resultat"></span></p>
+                </th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -55,29 +53,28 @@
             </tr>
         </thead>
         <tbody>
-            <lignea> <!-- LIGNE A -->
-                <tr>
+            <lignea > <!-- LIGNE A -->
+                <tr class="tr-group-start">
                     <th rowspan="5" class="thlignea">A</th>
                     <td class="tdlignea">
-                        <div><input type="text" id=a1 placeholder="matière" class="inputtextlignea"></div>
+                        <input type="text" id="a1" placeholder="matière" class="inputtextlignea">
                     </td>
-                    <td class="tdlignea"><input type="number" id="B1" placeholder="%" class="inputnumberlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="number" id="B1" placeholder="%" class="inputnumberlignea">
                     </td>
-                    <td rowspan="5" class="tdlignea"><input type="number" id="A" placeholder="kg/h"
-                        oninput="additionner()"class="styled-inputa"></td>
-
+                    <td class="tdlignea">
+                        <input type="text" placeholder="conex" class="inputtextlignea">
+                    </td>
+                    <td rowspan="5" class="tdlignea">
+                        <input type="number" id="A" placeholder="kg/h" oninput="additionner()" class="styled-inputa">
+                    </td>
                     <td id="D1" class="tdlignea"></td>
                     <td id="E1" class="tdlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" id=f1 placeholder="matière"
-                                class="inputtextlignea"> </div>
+                        <input type="text" id="f1" placeholder="matière" class="inputtextlignea">
                     </td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="H1" class="tdlignea"></td>
                     <td id="I1" class="tdlignea"></td>
@@ -86,22 +83,21 @@
                 </tr>
                 <tr>
                     <td class="tdlignea">
-                        <div><input type="text" id=a2 placeholder="matière" class="inputtextlignea"></div>
+                        <input type="text" id="a2" placeholder="matière" class="inputtextlignea">
                     </td>
-                    <td class="tdlignea"><input type="number" id="B2" placeholder="%" class="inputnumberlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="number" id="B2" placeholder="%" class="inputnumberlignea">
+                    </td>
+                    <td class="tdlignea">
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="D2" class="tdlignea"></td>
                     <td id="E2" class="tdlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text"id=f2 placeholder="matière"
-                                class="inputtextlignea"> </div>
+                        <input type="text" id="f2" placeholder="matière" class="inputtextlignea">
                     </td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="H2" class="tdlignea"></td>
                     <td id="I2" class="tdlignea"></td>
@@ -110,22 +106,21 @@
                 </tr>
                 <tr>
                     <td class="tdlignea">
-                        <div><input type="text" id=a3 placeholder="matière" class="inputtextlignea"></div>
+                        <input type="text" id="a3" placeholder="matière" class="inputtextlignea">
                     </td>
-                    <td class="tdlignea"><input type="number" id="B3" placeholder="%" class="inputnumberlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="number" id="B3" placeholder="%" class="inputnumberlignea">
+                    </td>
+                    <td class="tdlignea">
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="D3" class="tdlignea"></td>
                     <td id="E3" class="tdlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" id=f3 placeholder="matière"
-                                class="inputtextlignea"> </div>
+                        <input type="text" id="f3" placeholder="matière" class="inputtextlignea">
                     </td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="H3" class="tdlignea"></td>
                     <td id="I3" class="tdlignea"></td>
@@ -134,22 +129,21 @@
                 </tr>
                 <tr>
                     <td class="tdlignea">
-                        <div><input type="text" id=a4 placeholder="matière" class="inputtextlignea"></div>
+                        <input type="text" id="a4" placeholder="matière" class="inputtextlignea">
                     </td>
-                    <td class="tdlignea"><input type="number" id="B4" placeholder="%" class="inputnumberlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="number" id="B4" placeholder="%" class="inputnumberlignea">
+                    </td>
+                    <td class="tdlignea">
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="D4" class="tdlignea"></td>
                     <td id="E4" class="tdlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" id=f4 placeholder="matière"
-                                class="inputtextlignea"> </div>
+                        <input type="text" id="f4" placeholder="matière" class="inputtextlignea">
                     </td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="H4" class="tdlignea"></td>
                     <td id="I4" class="tdlignea"></td>
@@ -158,22 +152,21 @@
                 </tr>
                 <tr>
                     <td class="tdlignea">
-                        <div><input type="text" placeholder="matière" id=a5 class="inputtextlignea"></div>
+                        <input type="text" placeholder="matière" id="a5" class="inputtextlignea">
                     </td>
-                    <td class="tdlignea"><input type="number" id="B5" placeholder="%" class="inputnumberlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="number" id="B5" placeholder="%" class="inputnumberlignea">
+                    </td>
+                    <td class="tdlignea">
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="D5" class="tdlignea"></td>
                     <td id="E5" class="tdlignea"></td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" id=f5 placeholder="matière"
-                                class="inputtextlignea"> </div>
+                        <input type="text" id="f5" placeholder="matière" class="inputtextlignea">
                     </td>
                     <td class="tdlignea">
-                        <div class="input-containerlignea"><input type="text" placeholder="conex"
-                                class="inputtextlignea"> </div>
+                        <input type="text" placeholder="conex" class="inputtextlignea">
                     </td>
                     <td id="H5" class="tdlignea"></td>
                     <td id="I5" class="tdlignea"></td>
@@ -182,27 +175,27 @@
                 </tr>
             </lignea>
             <ligneb><!-- LIGNE B  -->
-                <tr>
+                <tr class="tr-group-start">
                     <th rowspan=4 class="thligneb">B</th> <!-- Numéro de ligne -->
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" id="a6" placeholder="matière" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B6" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="number" id="B6" placeholder="%" class="inputnumberligneb">
                     </td>
-                    <td rowspan="4" class="tdligneb"><input type="number" id="B" placeholder="kg/h"
-                        oninput="additionner()"class="styled-inputb"></td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
+                    </td>
+                    <td rowspan="4" class="tdligneb">
+                        <input type="number" id="B" placeholder="kg/h" oninput="additionner()" class="styled-inputb">
+                    </td>
                     <td id="D6" class="tdligneb"></td>
                     <td id="E6" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
+                        <input type="text" id="f6" placeholder="matière" class="inputtextligneb">
                     </td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="H6" class="tdligneb"></td>
                     <td id="I6" class="tdligneb"></td>
@@ -211,47 +204,44 @@
                 </tr>
                 <tr>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" id="a7" placeholder="matière" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B7" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="number" id="B7" placeholder="%" class="inputnumberligneb">
                     </td>
-
-
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
+                    </td>
                     <td id="D7" class="tdligneb"></td>
                     <td id="E7" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
-                        </td>
-                        <td class="tdligneb">
-                            <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                    class="inputtextligneb"> </div>
-                        </td>
-                        <td id="H7" class="tdligneb"></td>
-                        <td id="I7" class="tdligneb"></td>
-                        <td id="J7" class="tdligneb"></td>
-                        <td id="K7" class="tdligneb"></td>
+                        <input type="text" id="f7" placeholder="matière" class="inputtextligneb">
+                    </td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
+                    </td>
+                    <td id="H7" class="tdligneb"></td>
+                    <td id="I7" class="tdligneb"></td>
+                    <td id="J7" class="tdligneb"></td>
+                    <td id="K7" class="tdligneb"></td>
                 </tr>
                 <tr>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" id="a8" placeholder="matière" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B8" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="conex" class="inputtextligneb"></div>
+                        <input type="number" id="B8" placeholder="%" class="inputnumberligneb">
+                    </td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="D8" class="tdligneb"></td>
                     <td id="E8" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
+                        <input type="text" id="f8" placeholder="matière" class="inputtextligneb">
                     </td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="H8" class="tdligneb"></td>
                     <td id="I8" class="tdligneb"></td>
@@ -259,23 +249,22 @@
                     <td id="K8" class="tdligneb"></td>
                 </tr>
                 <tr>
-
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" placeholder="matière" id="a9" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B9" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="conex" class="inputtextligneb"></div>
+                        <input type="number" id="B9" placeholder="%" class="inputnumberligneb">
+                    </td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="D9" class="tdligneb"></td>
                     <td id="E9" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
+                        <input type="text" id="f9" placeholder="matière" class="inputtextligneb">
                     </td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="H9" class="tdligneb"></td>
                     <td id="I9" class="tdligneb"></td>
@@ -284,27 +273,27 @@
                 </tr>
             </ligneb>
             <lignec> <!-- LIGNE C  -->
-                <tr>
+                <tr class="tr-group-start">
                     <th rowspan=3 class="thligneb">C</th>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" placeholder="matière" id="a10" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B10" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="number" id="B10" placeholder="%" class="inputnumberligneb">
                     </td>
-                    <td rowspan="3" class="tdligneb"><input type="number" id="C" placeholder="kg/h"
-                        oninput="additionner()"class="styled-inputb"></td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
+                    </td>
+                    <td rowspan="3" class="tdligneb">
+                        <input type="number" id="C" placeholder="kg/h" oninput="additionner()" class="styled-inputb">
+                    </td>
                     <td id="D10" class="tdligneb"></td>
                     <td id="E10" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
+                        <input type="text" id="f10" placeholder="matière" class="inputtextligneb">
                     </td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="H10" class="tdligneb"></td>
                     <td id="I10" class="tdligneb"></td>
@@ -313,45 +302,44 @@
                 </tr>
                 <tr>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" placeholder="matière" id="a11" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B11" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="conex" class="inputtextligneb"></div>
+                        <input type="number" id="B11" placeholder="%" class="inputnumberligneb">
+                    </td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="D11" class="tdligneb"></td>
                     <td id="E11" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
+                        <input type="text" id="f11" placeholder="matière" class="inputtextligneb">
                     </td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="H11" class="tdligneb"></td>
                     <td id="I11" class="tdligneb"></td>
                     <td id="J11" class="tdligneb"></td>
                     <td id="K11" class="tdligneb"></td>
-
                 </tr>
                 <tr>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                        <input type="text" placeholder="matière" id="a12" class="inputtextligneb">
                     </td>
-                    <td class="tdligneb"><input type="number" id="B12" placeholder="%" class="inputnumberligneb"></td>
                     <td class="tdligneb">
-                        <div><input type="text" placeholder="conex" class="inputtextligneb"></div>
+                        <input type="number" id="B12" placeholder="%" class="inputnumberligneb">
+                    </td>
+                    <td class="tdligneb">
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="D12" class="tdligneb"></td>
                     <td id="E12" class="tdligneb"></td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
+                        <input type="text" id="f12" placeholder="matière" class="inputtextligneb">
                     </td>
                     <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
+                        <input type="text" placeholder="conex" class="inputtextligneb">
                     </td>
                     <td id="H12" class="tdligneb"></td>
                     <td id="I12" class="tdligneb"></td>
@@ -360,23 +348,24 @@
                 </tr>
             </lignec>
             <!-- LIGNE D  -->
-            <tr>
+            <tr class="tr-group-start">
                 <th rowspan=3 class="thlignea">D</th>
                 <td class="tdlignea">
-                    <div><input type="text" placeholder="matière" class="inputtextlignea"></div>
+                    <input type="text" placeholder="matière" id="a13" class="inputtextlignea">
                 </td>
-                <td class="tdlignea"><input type="number" id="B13" placeholder="%" class="inputnumberlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="conex" class="inputtextlignea">
-                    </div>
+                    <input type="number" id="B13" placeholder="%" class="inputnumberlignea">
                 </td>
-                <td rowspan="3" class="tdlignea"><input type="number" id="D" placeholder="kg/h" oninput="additionner()"class="styled-inputa">
+                <td class="tdlignea">
+                    <input type="text" placeholder="conex" class="inputtextlignea">
+                </td>
+                <td rowspan="3" class="tdlignea">
+                    <input type="number" id="D" placeholder="kg/h" oninput="additionner()" class="styled-inputa">
                 </td>
                 <td id="D13" class="tdlignea"></td>
                 <td id="E13" class="tdlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="matière" class="inputtextlignea">
-                    </div>
+                    <input type="text" id="f13" placeholder="matière" class="inputtextlignea">
                 </td>
                 <td class="tdlignea">
                     <div class="input-containerlignea"><input type="text" placeholder="conex" class="inputtextlignea">
@@ -389,7 +378,7 @@
             </tr>
             <tr>
                 <td class="tdlignea">
-                    <div><input type="text" placeholder="matière" class="inputtextlignea"></div>
+                    <div><input type="text" placeholder="matière" id=a14 class="inputtextlignea"></div>
                 </td>
                 <td class="tdlignea"><input type="number" id="B14" placeholder="%" class="inputnumberlignea"></td>
                 <td class="tdlignea">
@@ -399,7 +388,7 @@
                 <td id="D14" class="tdlignea"></td>
                 <td id="E14" class="tdlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="matière" class="inputtextlignea">
+                    <div class="input-containerlignea"><input type="text" id=f14 placeholder="matière" class="inputtextlignea">
                     </div>
                 </td>
                 <td class="tdlignea">
@@ -413,7 +402,7 @@
             </tr>
             <tr>
                 <td class="tdlignea">
-                    <div><input type="text" placeholder="matière" class="inputtextlignea"></div>
+                    <div><input type="text" placeholder="matière" id=a15 class="inputtextlignea"></div>
                 </td>
                 <td class="tdlignea"><input type="number" id="B15" placeholder="%" class="inputnumberlignea"></td>
                 <td class="tdlignea">
@@ -423,7 +412,8 @@
                 <td id="D15" class="tdlignea"></td>
                 <td id="E15" class="tdlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="matière" class="inputtextlignea">
+                    <div class="input-containerlignea"><input type="text" id=f15 placeholder="matière"
+                            class="inputtextlignea">
                     </div>
                 </td>
                 <td class="tdlignea">
@@ -436,51 +426,51 @@
                 <td id="K15" class="tdlignea"></td>
             </tr>
             <!-- LIGNE E  -->
-            <tr>
+            <tr class="tr-group-start">
                 <th rowspan=3 class="thligneb">E</th>
-                    <td class="tdligneb">
-                        <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
-                    </td>
-                    <td class="tdligneb"><input type="number" id="B16" placeholder="%" class="inputnumberligneb"></td>
-                    <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
-                    </td>
-                    <td rowspan="3" class="tdligneb"><input type="number" id="E" placeholder="kg/h"
-                        oninput="additionner()"class="styled-inputb"></td>
-                    <td id="D16" class="tdligneb"></td>
-                    <td id="E16" class="tdligneb"></td>
-                    <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="matière"
-                                class="inputtextligneb"> </div>
-                    </td>
-                    <td class="tdligneb">
-                        <div class="input-containerligneb"><input type="text" placeholder="conex"
-                                class="inputtextligneb"> </div>
-                    </td>
-                    <td id="H16" class="tdligneb"></td>
-                    <td id="I16" class="tdligneb"></td>
-                    <td id="J16" class="tdligneb"></td>
-                    <td id="K16" class="tdligneb"></td>
+                <td class="tdligneb">
+                    <div><input type="text" placeholder="matière" id=a16 class="inputtextligneb"></div>
+                </td>
+                <td class="tdligneb"><input type="number" id="B16" placeholder="%" class="inputnumberligneb"></td>
+                <td class="tdligneb">
+                    <div class="input-containerligneb"><input type="text" placeholder="conex" class="inputtextligneb">
+                    </div>
+                </td>
+                <td rowspan="3" class="tdligneb"><input type="number" id="E" placeholder="kg/h" oninput="additionner()"
+                        class="styled-inputb"></td>
+                <td id="D16" class="tdligneb"></td>
+                <td id="E16" class="tdligneb"></td>
+                <td class="tdligneb">
+                    <div class="input-containerligneb"><input type="text" id=f16 placeholder="matière" class="inputtextligneb">
+                    </div>
+                </td>
+                <td class="tdligneb">
+                    <div class="input-containerligneb"><input type="text" placeholder="conex" class="inputtextligneb">
+                    </div>
+                </td>
+                <td id="H16" class="tdligneb"></td>
+                <td id="I16" class="tdligneb"></td>
+                <td id="J16" class="tdligneb"></td>
+                <td id="K16" class="tdligneb"></td>
             </tr>
             <tr>
                 <td class="tdligneb">
-                    <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                    <div><input type="text" placeholder="matière" id=a17 class="inputtextligneb"></div>
                 </td>
                 <td class="tdligneb"><input type="number" id="B17" placeholder="%" class="inputnumberligneb"></td>
                 <td class="tdligneb">
-                    <div class="input-containerligneb"><input type="text" placeholder="conex"
-                            class="inputtextligneb"> </div>
+                    <div class="input-containerligneb"><input type="text" placeholder="conex" class="inputtextligneb">
+                    </div>
                 </td>
                 <td id="D17" class="tdligneb"></td>
                 <td id="E17" class="tdligneb"></td>
                 <td class="tdligneb">
-                    <div class="input-containerligneb"><input type="text" placeholder="matière"
-                            class="inputtextligneb"> </div>
+                    <div class="input-containerligneb"><input type="text" id=f17 placeholder="matière" class="inputtextligneb">
+                    </div>
                 </td>
                 <td class="tdligneb">
-                    <div class="input-containerligneb"><input type="text" placeholder="conex"
-                            class="inputtextligneb"> </div>
+                    <div class="input-containerligneb"><input type="text" placeholder="conex" class="inputtextligneb">
+                    </div>
                 </td>
                 <td id="H17" class="tdligneb"></td>
                 <td id="I17" class="tdligneb"></td>
@@ -489,22 +479,22 @@
             </tr>
             <tr>
                 <td class="tdligneb">
-                    <div><input type="text" placeholder="matière" class="inputtextligneb"></div>
+                    <div><input type="text" placeholder="matière" id=a18 class="inputtextligneb"></div>
                 </td>
                 <td class="tdligneb"><input type="number" id="B18" placeholder="%" class="inputnumberligneb"></td>
                 <td class="tdligneb">
-                    <div class="input-containerligneb"><input type="text" placeholder="conex"
-                            class="inputtextligneb"> </div>
+                    <div class="input-containerligneb"><input type="text" placeholder="conex" class="inputtextligneb">
+                    </div>
                 </td>
                 <td id="D18" class="tdligneb"></td>
                 <td id="E18" class="tdligneb"></td>
                 <td class="tdligneb">
-                    <div class="input-containerligneb"><input type="text" placeholder="matière"
-                            class="inputtextligneb"> </div>
+                    <div class="input-containerligneb"><input type="text" id=f18 placeholder="matière" class="inputtextligneb">
+                    </div>
                 </td>
                 <td class="tdligneb">
-                    <div class="input-containerligneb"><input type="text" placeholder="conex"
-                            class="inputtextligneb"> </div>
+                    <div class="input-containerligneb"><input type="text" placeholder="conex" class="inputtextligneb">
+                    </div>
                 </td>
                 <td id="H18" class="tdligneb"></td>
                 <td id="I18" class="tdligneb"></td>
@@ -512,22 +502,23 @@
                 <td id="K18" class="tdligneb"></td>
             </tr>
             <!-- LIGNE F  -->
-            <tr>
+            <tr class="tr-group-start">
                 <th rowspan=3 class="thlignea">F</th>
                 <td class="tdlignea">
-                    <div><input type="text" placeholder="matière" class="inputtextlignea"></div>
+                    <div><input type="text" placeholder="matière" id=a19 class="inputtextlignea"></div>
                 </td>
                 <td class="tdlignea"><input type="number" id="B19" placeholder="%" class="inputnumberlignea"></td>
                 <td class="tdlignea">
                     <div class="input-containerlignea"><input type="text" placeholder="conex" class="inputtextlignea">
                     </div>
                 </td>
-                <td rowspan="3" class="tdlignea"><input type="number" id="F" placeholder="kg/h" oninput="additionner()"class="styled-inputa">
+                <td rowspan="3" class="tdlignea"><input type="number" id="F" placeholder="kg/h" oninput="additionner()"
+                        class="styled-inputa">
                 </td>
                 <td id="D19" class="tdlignea"></td>
                 <td id="E19" class="tdlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="matière" class="inputtextlignea">
+                    <div class="input-containerlignea"><input type="text" id=f19 placeholder="matière" class="inputtextlignea">
                     </div>
                 </td>
                 <td class="tdlignea">
@@ -541,7 +532,7 @@
             </tr>
             <tr>
                 <td class="tdlignea">
-                    <div><input type="text" placeholder="matière" class="inputtextlignea"></div>
+                    <div><input type="text" placeholder="matière" id=a20 class="inputtextlignea"></div>
                 </td>
                 <td class="tdlignea"><input type="number" id="B20" placeholder="%" class="inputnumberlignea"></td>
                 <td class="tdlignea">
@@ -551,7 +542,7 @@
                 <td id="D20" class="tdlignea"></td>
                 <td id="E20" class="tdlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="matière" class="inputtextlignea">
+                    <div class="input-containerlignea"><input type="text" id=f20 placeholder="matière" class="inputtextlignea">
                     </div>
                 </td>
                 <td class="tdlignea">
@@ -565,7 +556,7 @@
             </tr>
             <tr>
                 <td class="tdlignea">
-                    <div><input type="text" placeholder="matière" class="inputtextlignea"></div>
+                    <div><input type="text" placeholder="matière" id=a21 class="inputtextlignea"></div>
                 </td>
                 <td class="tdlignea"><input type="number" id="B21" placeholder="%" class="inputnumberlignea"></td>
                 <td class="tdlignea">
@@ -575,18 +566,17 @@
                 <td id="D21" class="tdlignea"></td>
                 <td id="E21" class="tdlignea"></td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="matière" class="inputtextlignea">
-                    </div>
+                    <input type="text" id="f21" placeholder="matière" class="inputtextlignea">
                 </td>
                 <td class="tdlignea">
-                    <div class="input-containerlignea"><input type="text" placeholder="conex" class="inputtextlignea">
-                    </div>
+                    <input type="text" placeholder="conex" class="inputtextlignea">
                 </td>
                 <td id="H21" class="tdlignea"></td>
                 <td id="I21" class="tdlignea"></td>
                 <td id="J21" class="tdlignea"></td>
                 <td id="K21" class="tdlignea"></td>
             </tr>
+            
 
         </tbody>
     </table>
