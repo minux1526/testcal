@@ -1,4 +1,3 @@
-
 function additionner() {
     const A = document.getElementById('A').value;
     const B = document.getElementById('B').value;
@@ -191,6 +190,15 @@ document.addEventListener('DOMContentLoaded', () => {
         calculerTempsRestant24(resultB19, E19);
         calculerTempsRestant24(resultB20, E20);
         calculerTempsRestant24(resultB21, E21);
+        calculerTempsRestant24(resultB22, E22);
+        calculerTempsRestant24(resultB23, E23);
+        calculerTempsRestant24(resultB24, E24);
+        calculerTempsRestant24(resultB25, E25);
+        calculerTempsRestant24(resultB26, E26);
+        calculerTempsRestant24(resultB27, E27);
+        calculerTempsRestant24(resultB28, E28);
+        calculerTempsRestant24(resultB29, E29);
+        calculerTempsRestant24(resultB30, E30);
     }
     A.addEventListener('input', calculer);
     B.addEventListener('input', calculer);
@@ -222,6 +230,15 @@ document.addEventListener('DOMContentLoaded', () => {
     B19.addEventListener('input', calculer);
     B20.addEventListener('input', calculer);
     B21.addEventListener('input', calculer);
+    B22.addEventListener('input', calculer);
+    B23.addEventListener('input', calculer);
+    B24.addEventListener('input', calculer);
+    B25.addEventListener('input', calculer);
+    B26.addEventListener('input', calculer);
+    B27.addEventListener('input', calculer);
+    B28.addEventListener('input', calculer);
+    B29.addEventListener('input', calculer);
+    B30.addEventListener('input', calculer);
 
 });
 document.addEventListener('DOMContentLoaded', () => {
@@ -229,70 +246,84 @@ document.addEventListener('DOMContentLoaded', () => {
     const f1 = document.getElementById('f1');
     const a2 = document.getElementById('a2');
     const f2 = document.getElementById('f2');
-   // const a3 = document.getElementById('a3');
-   // const f3 = document.getElementById('f3');
-    //const a4 = document.getElementById('a4');
-   // const f4 = document.getElementById('f4');
-  //  const a5 = document.getElementById('a5');
-   // const f5 = document.getElementById('f5');
-   // const a6 = document.getElementById('a6');
-   // const f6 = document.getElementById('f6');
-   // const a7 = document.getElementById('a7');
-   // const f7 = document.getElementById('f7');
-  //  const a8 = document.getElementById('a8');
-   // const f8 = document.getElementById('f8');
-  //  const a9 = document.getElementById('a9');
-  //  const f9 = document.getElementById('f9');
-  //  const a10 = document.getElementById('a10');
- //   const f10 = document.getElementById('f10');
-  //  const a11 = document.getElementById('a11');
- //   const f11 = document.getElementById('f11');
-  //  const a12 = document.getElementById('a12');
-  //  const f12 = document.getElementById('f12');
-  //  const a13 = document.getElementById('a13');
-  //  const f13 = document.getElementById('f13');
-  //  const a14 = document.getElementById('a14');
-  //  const f14 = document.getElementById('f14');
-  //  const a15 = document.getElementById('a15');
-  //  const f15 = document.getElementById('f15');
-  //  const a16 = document.getElementById('a16');
- //   const f16 = document.getElementById('f16');
- //   const a17 = document.getElementById('a17');
- //   const f17 = document.getElementById('f17');
-  //  const a18 = document.getElementById('a18');
-  //  const f18 = document.getElementById('f18');
-  //  const a19 = document.getElementById('a19');
- //   const f19 = document.getElementById('f19');
- //   const a20 = document.getElementById('a20');
- //   const f20 = document.getElementById('f20');
-  //  const a21 = document.getElementById('a21');
-  //  const f21 = document.getElementById('f21');
-  //  const a22 = document.getElementById('a22');
-  //  const f22 = document.getElementById('f22');
-  //  const a23 = document.getElementById('a23');
-  //  const f23 = document.getElementById('f23');
-  //  const a24 = document.getElementById('a24');
-  //  const f24 = document.getElementById('f24');
-  //  const a25 = document.getElementById('a25');
-  //  const f25 = document.getElementById('f25');
-  //  const a26 = document.getElementById('a26');
-  //  const f26 = document.getElementById('f26');
-  //  const a27 = document.getElementById('a27');
-  //  const f27 = document.getElementById('f27');
-  //  const a28 = document.getElementById('a28');
-  //  const f28 = document.getElementById('f28');
-  //  const a29 = document.getElementById('a29');
-  //  const f29 = document.getElementById('f29');
-  //  const a30 = document.getElementById('a30');
-  //  const f30 = document.getElementById('f30');
+    const a3 = document.getElementById('a3');
+    const f3 = document.getElementById('f3');
+    const a4 = document.getElementById('a4');
+    const f4 = document.getElementById('f4');
+    const a5 = document.getElementById('a5');
+    const f5 = document.getElementById('f5');
+    const a6 = document.getElementById('a6');
+    const f6 = document.getElementById('f6');
+    const a7 = document.getElementById('a7');
+    const f7 = document.getElementById('f7');
+    const a8 = document.getElementById('a8');
+    const f8 = document.getElementById('f8');
+    const a9 = document.getElementById('a9');
+ const f9 = document.getElementById('f9');
+    const a10 = document.getElementById('a10');
+     const f10 = document.getElementById('f10');
+    const a11 = document.getElementById('a11');
+    const f11 = document.getElementById('f11');
+    const a12 = document.getElementById('a12');
+    const f12 = document.getElementById('f12');
+     const a13 = document.getElementById('a13');
+    const f13 = document.getElementById('f13');
+    const a14 = document.getElementById('a14');
+ const f14 = document.getElementById('f14');
+      const a15 = document.getElementById('a15');
+     const f15 = document.getElementById('f15');
+     const a16 = document.getElementById('a16');
+      const f16 = document.getElementById('f16');
+      const a17 = document.getElementById('a17');
+      const f17 = document.getElementById('f17');
+     const a18 = document.getElementById('a18');
+      const f18 = document.getElementById('f18');
+     const a19 = document.getElementById('a19');
+       const f19 = document.getElementById('f19');
+       const a20 = document.getElementById('a20');
+      const f20 = document.getElementById('f20');
+      const a21 = document.getElementById('a21');
+     const f21 = document.getElementById('f21');
+    //  const a22 = document.getElementById('a22');
+    //  const f22 = document.getElementById('f22');
+    //  const a23 = document.getElementById('a23');
+    //  const f23 = document.getElementById('f23');
+    //  const a24 = document.getElementById('a24');
+    //  const f24 = document.getElementById('f24');
+    //  const a25 = document.getElementById('a25');
+    //  const f25 = document.getElementById('f25');
+    //  const a26 = document.getElementById('a26');
+    //  const f26 = document.getElementById('f26');
+    //  const a27 = document.getElementById('a27');
+    //  const f27 = document.getElementById('f27');
+    //  const a28 = document.getElementById('a28');
+    //  const f28 = document.getElementById('f28');
+    //  const a29 = document.getElementById('a29');
+    //  const f29 = document.getElementById('f29');
+    //  const a30 = document.getElementById('a30');
+    //  const f30 = document.getElementById('f30');
 
-    function compareAndStyle(element1, element2) {
+    function compareAndStyle(element1, element2, rowNumber) {
+        // Sélectionner tous les td de la ligne sauf ceux avec rowspan
+        const row = element1.closest('tr');
+        const cells = row.querySelectorAll('td:not([rowspan])');
+        
         if (element1.value !== element2.value) {
-            element1.classList.add('different');
-            element2.classList.add('different');
+            // Ajouter la classe à toutes les cellules de la ligne
+            cells.forEach(cell => {
+                cell.classList.add('different');
+                // S'assurer que les inputs dans les cellules sont aussi colorés
+                const inputs = cell.querySelectorAll('input');
+                inputs.forEach(input => input.classList.add('different'));
+            });
         } else {
-            element1.classList.remove('different');
-            element2.classList.remove('different');
+            // Retirer la classe de toutes les cellules de la ligne
+            cells.forEach(cell => {
+                cell.classList.remove('different');
+                // Retirer la classe des inputs
+                const inputs = cell.querySelectorAll('input');
+                inputs.forEach(input => input.classList.remove('different'));
+            });
         }
     }
 
@@ -301,12 +332,96 @@ document.addEventListener('DOMContentLoaded', () => {
     compareAndStyle(a3, f3);
     compareAndStyle(a4, f4);
     compareAndStyle(a5, f5);
+    compareAndStyle(a6, f6);
+    //compareAndStyle(a7, f7);
+    //compareAndStyle(a8, f8);
+    //compareAndStyle(a9, f9);
+    //compareAndStyle(a10, f10);
+    //compareAndStyle(a11, f11);
+    //compareAndStyle(a12, f12);
+   // compareAndStyle(a13, f13);
+    //compareAndStyle(a14, f14);
+   //  compareAndStyle(a15, f15);
+   //  compareAndStyle(a16, f16);
+   // compareAndStyle(a17, f17);
+   // compareAndStyle(a18, f18);
+    //  compareAndStyle(a19, f19);
+    //  compareAndStyle(a20, f20);
+   //   compareAndStyle(a21, f21);
+    //  compareAndStyle(a22, f22);
+    //  compareAndStyle(a23, f23);
+    //  compareAndStyle(a24, f24);
+    //  compareAndStyle(a25, f25);
+    //  compareAndStyle(a26, f26);
+    // compareAndStyle(a27, f27);
+    //  compareAndStyle(a28, f28);
+    //  compareAndStyle(a29, f29);
+    //  compareAndStyle(a30, f30);
 
 
     a1.addEventListener('input', () => compareAndStyle(a1, f1));
     f1.addEventListener('input', () => compareAndStyle(a1, f1));
     a2.addEventListener('input', () => compareAndStyle(a2, f2));
     f2.addEventListener('input', () => compareAndStyle(a2, f2));
+    a3.addEventListener('input', () => compareAndStyle(a3, f3));
+    f3.addEventListener('input', () => compareAndStyle(a3, f3));
+    a4.addEventListener('input', () => compareAndStyle(a4, f4));
+    f4.addEventListener('input', () => compareAndStyle(a4, f4));
+    a5.addEventListener('input', () => compareAndStyle(a5, f5));
+    f5.addEventListener('input', () => compareAndStyle(a5, f5));
+    a6.addEventListener('input', () => compareAndStyle(a6, f6));
+    f6.addEventListener('input', () => compareAndStyle(a6, f6));
+    a7.addEventListener('input', () => compareAndStyle(a7, f7));
+    f7.addEventListener('input', () => compareAndStyle(a7, f7));
+    a8.addEventListener('input', () => compareAndStyle(a8, f8));
+    f8.addEventListener('input', () => compareAndStyle(a8, f8));
+    a9.addEventListener('input', () => compareAndStyle(a9, f9));
+    f9.addEventListener('input', () => compareAndStyle(a9, f9));
+    a10.addEventListener('input', () => compareAndStyle(a10, f10));
+    f10.addEventListener('input', () => compareAndStyle(a10, f10));
+    a11.addEventListener('input', () => compareAndStyle(a11, f11));
+    f11.addEventListener('input', () => compareAndStyle(a11, f11));
+    a12.addEventListener('input', () => compareAndStyle(a12, f12));
+    f12.addEventListener('input', () => compareAndStyle(a12, f12));
+    a13.addEventListener('input', () => compareAndStyle(a13, f13));
+    f13.addEventListener('input', () => compareAndStyle(a13, f13));
+    a14.addEventListener('input', () => compareAndStyle(a14, f14));
+    f14.addEventListener('input', () => compareAndStyle(a14, f14));
+    a15.addEventListener('input', () => compareAndStyle(a15, f15));
+    f15.addEventListener('input', () => compareAndStyle(a15, f15));
+    a16.addEventListener('input', () => compareAndStyle(a16, f16));
+    f16.addEventListener('input', () => compareAndStyle(a16, f16));
+    a17.addEventListener('input', () => compareAndStyle(a17, f17));
+    f17.addEventListener('input', () => compareAndStyle(a17, f17));
+    a18.addEventListener('input', () => compareAndStyle(a18, f18));
+    f18.addEventListener('input', () => compareAndStyle(a18, f18));
+    a19.addEventListener('input', () => compareAndStyle(a19, f19));
+    f19.addEventListener('input', () => compareAndStyle(a19, f19));
+    a20.addEventListener('input', () => compareAndStyle(a20, f20));
+    f20.addEventListener('input', () => compareAndStyle(a20, f20));
+    a21.addEventListener('input', () => compareAndStyle(a21, f21));
+    f21.addEventListener('input', () => compareAndStyle(a21, f21));
+    a22.addEventListener('input', () => compareAndStyle(a22, f22));
+    f22.addEventListener('input', () => compareAndStyle(a22, f22));
+    a23.addEventListener('input', () => compareAndStyle(a23, f23));
+    f23.addEventListener('input', () => compareAndStyle(a23, f23));
+    a24.addEventListener('input', () => compareAndStyle(a24, f24));
+    f24.addEventListener('input', () => compareAndStyle(a24, f24));
+    a25.addEventListener('input', () => compareAndStyle(a25, f25));
+    f25.addEventListener('input', () => compareAndStyle(a25, f25));
+    a26.addEventListener('input', () => compareAndStyle(a26, f26));
+    f26.addEventListener('input', () => compareAndStyle(a26, f26));
+    a27.addEventListener('input', () => compareAndStyle(a27, f27));
+    f27.addEventListener('input', () => compareAndStyle(a27, f27));
+    a28.addEventListener('input', () => compareAndStyle(a28, f28));
+    f28.addEventListener('input', () => compareAndStyle(a28, f28));
+    a29.addEventListener('input', () => compareAndStyle(a29, f29));
+    f29.addEventListener('input', () => compareAndStyle(a29, f29));
+    a30.addEventListener('input', () => compareAndStyle(a30, f30));
+    f30.addEventListener('input', () => compareAndStyle(a30, f30));
+
+
+
 });
 
 
